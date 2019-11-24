@@ -1,7 +1,12 @@
 <form method="post" action="../upload_file/" enctype="multipart/form-data">
 	{% csrf_token %}
-	<table>
-		{{form.as_table}}
-	</table>
-    <input type="submit" value="Upload Images"/>
+	Select up to 3 images to upload:
+	<!--</table>-->
+		<!--{{form.as_table}}-->
+		<br/>&nbsp;<input type="file" name = "file1">
+		<br/>&nbsp;<input type="file" name = "file2">
+		<br/>&nbsp;<input type="file" name = "file3">
+	 	
+	<!--</table>-->
+	<br/><input type="submit" value="Upload Images"/>
 </form>
